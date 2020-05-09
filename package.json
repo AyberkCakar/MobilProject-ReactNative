@@ -1,0 +1,34 @@
+{
+  "name": "MobileTestProject",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "formik": "^1.5.2",
+    "mobx": "^5.9.4",
+    "mobx-react": "^5.4.3",
+    "native-base": "^2.12.1",
+    "react": "16.8.3",
+    "react-native": "0.59.8",
+    "react-native-gesture-handler": "^1.0.17",
+    "react-navigation": "^3.4.1",
+    "yup": "^0.27.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.0",
+    "@babel/plugin-proposal-decorators": "^7.4.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/runtime": "7.9.2",
+    "babel-jest": "25.4.0",
+    "jest": "25.4.0",
+    "metro-react-native-babel-preset": "^0.53.1",
+    "react-test-renderer": "16.8.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
