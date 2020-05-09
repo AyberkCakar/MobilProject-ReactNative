@@ -27,7 +27,7 @@ export default class SigninForm extends Component {
                 return false;
             }
 
-            this.props.AuthStore.saveUser(data);
+            this.props.AuthStore.saveUser(data.data.profile.name,data.data.profile.surname,data.data.profile.city);
         }catch (e) {
             bag.setSubmitting(false);
             bag.setErrors(e)
