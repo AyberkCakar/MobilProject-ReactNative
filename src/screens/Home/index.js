@@ -32,10 +32,10 @@ export default class Home extends Component {
                       <Icon name="arrow-forward"/>
                   </Right>
               </ListItem>
-              <ListItem onIntent onPress={() => {NavigationService.navigate('Maps')}}  style={{borderBottomWidth:0.5}}>
+              <ListItem onIntent onPress={() => {NavigationService.navigate('Sensors')}}  style={{borderBottomWidth:0.5}}>
                   <Left>
                       <Icon name="speedometer"/>
-                      <Text>Ölçme</Text>
+                      <Text>Sensör</Text>
                   </Left>
                   <Right>
                       <Icon name="arrow-forward"/>
