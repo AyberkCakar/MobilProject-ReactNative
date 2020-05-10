@@ -9,6 +9,8 @@ import axios from 'axios';
 
 import {inject} from 'mobx-react';
 import {API_BASE} from "../../constants";
+import {StyleSheet} from "react-native";
+import AuthStore from "../../store/AuthStore";
 
 @inject('AuthStore')
 export default class SigninForm extends Component {
@@ -21,11 +23,12 @@ export default class SigninForm extends Component {
                 });
             bag.setSubmitting(false);
 
-            if (!data.success === true)
+            if (!data)
             {
-                alert(data.message);
+                alert("Hata");
                 return false;
             }
+
 
             this.props.AuthStore.saveUser(data.data.profile.name,data.data.profile.surname,data.data.profile.city);
         }catch (e) {
@@ -55,6 +58,14 @@ export default class SigninForm extends Component {
                       isSubmitting
                   }) => (
                     <Content style={{padding: 10}}>
+                        <Text style={{marginVertical:10,
+                            fontSize:14,
+                            color: '#7A7C80',
+                            fontWeight: 'bold',
+                            paddingVertical:15
+                            }}>
+                            Sing In
+                        </Text>
                         <Item error={errors.username && touched.username}>
                             <Input
                                 returnKeyType={'next'}
@@ -65,9 +76,10 @@ export default class SigninForm extends Component {
                                 onBlur={() => setFieldTouched('username')}
                                 autoCorrect={false}
                                 autoCapitalize={'none'}
+                                style={styles.input}
                             />
 
-                            { (errors.username && touched.username) && <Text style={{color: 'red'}}>{errors.username}</Text>}
+                            { (errors.username && touched.username) && <Text style={{color: 'red'}}>{"*"}</Text>}
                         </Item>
 
                         <Item error={errors.password && touched.password}>
@@ -81,9 +93,10 @@ export default class SigninForm extends Component {
                                 onBlur={() => setFieldTouched('password')}
                                 autoCapitalize={'none'}
                                 secureTextEntry={true}
+                                style={styles.input}
                             />
 
-                            { (errors.password && touched.password) && <Text style={{color: 'red'}}>{errors.password}</Text>}
+                            { (errors.password && touched.password) && <Text style={{color: 'red'}}>{"*"}</Text>}
                         </Item>
 
 
@@ -91,7 +104,7 @@ export default class SigninForm extends Component {
                             block
                             disabled={!isValid || isSubmitting}
                             onPress={handleSubmit}
-                            style={{marginTop: 10}}>
+                            style={{marginTop: 10,borderRadius:7}}>
 
                             { isSubmitting && <Spinner size={'small'} color={'white'} /> }
                             <Text>login</Text>
@@ -102,3 +115,14 @@ export default class SigninForm extends Component {
         );
     }
 }
+
+const styles = StyleSheet.create({
+    input: {
+        height: 40,
+        paddingHorizontal: 20,
+        borderColor: '#f1f1f1',
+        color: '#999',
+        fontSize: 12,
+        fontWeight: '600',
+    }
+});

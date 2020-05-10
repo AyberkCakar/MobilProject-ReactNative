@@ -18,7 +18,8 @@ export default class LogoutButton extends Component {
 
 const styles = StyleSheet.create({
     buttonContainer: {
-        padding:10
+        padding:10,
+        marginRight:10
     },
     text: {
         fontSize: 14

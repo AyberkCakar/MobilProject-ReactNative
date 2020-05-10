@@ -22,14 +22,16 @@ const AppStack = createStackNavigator({
         screen: Home,
         navigationOptions:{
             title: 'Home',
-        }
+        },
     },
     Maps: {
         screen: Maps,
         navigationOptions:{
             title: 'Maps',
         }
-    }
+    },
+},{
+    headerLayoutPreset: 'center'
 });
 
 

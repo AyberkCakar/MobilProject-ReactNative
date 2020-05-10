@@ -7,7 +7,7 @@ import NavigationService from "../../NavigationService";
 
 export default class Home extends Component {
     static navigationOptions = {
-        headerLeft: LogoutButton
+        headerRight: (<LogoutButton/>)
     };
 
   render() {
@@ -16,6 +16,7 @@ export default class Home extends Component {
           <List>
               <ListItem onIntent onPress={() => {NavigationService.navigate('Maps')}}  style={{borderBottomWidth:0.5}}>
                   <Left>
+                      <Icon name="map"/>
                       <Text>Maps</Text>
                   </Left>
                   <Right>
@@ -24,6 +25,7 @@ export default class Home extends Component {
               </ListItem>
               <ListItem onIntent onPress={() => {NavigationService.navigate('Maps')}}  style={{borderBottomWidth:0.5}}>
                   <Left>
+                      <Icon name="image"/>
                       <Text>Fotoğraf</Text>
                   </Left>
                   <Right>
@@ -32,6 +34,7 @@ export default class Home extends Component {
               </ListItem>
               <ListItem onIntent onPress={() => {NavigationService.navigate('Maps')}}  style={{borderBottomWidth:0.5}}>
                   <Left>
+                      <Icon name="speedometer"/>
                       <Text>Ölçme</Text>
                   </Left>
                   <Right>
@@ -40,6 +43,7 @@ export default class Home extends Component {
               </ListItem>
               <ListItem onIntent onPress={() => {NavigationService.navigate('Maps')}}  style={{borderBottomWidth:0.5}}>
                   <Left>
+                      <Icon name="pulse"/>
                       <Text>Şarj</Text>
                   </Left>
                   <Right>
