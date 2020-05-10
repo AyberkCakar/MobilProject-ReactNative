@@ -9,31 +9,27 @@ import axios from 'axios';
 
 import {inject} from 'mobx-react';
 import {API_BASE} from "../../constants";
-import {StyleSheet} from "react-native";
+import {StyleSheet,Alert} from "react-native";
 import AuthStore from "../../store/AuthStore";
 
 @inject('AuthStore')
 export default class SigninForm extends Component {
     _handleSubmit = async ({username,password}, bag) => {
         try {
-            const { data } = await axios.post(`${API_BASE}`,
+            const {data} = await axios.post(`${API_BASE}`,
                 {
                         "username": username,
                         "password": password
                 });
-            bag.setSubmitting(false);
-
-            if (!data)
-            {
-                alert("Hata");
-                return false;
-            }
 
 
             this.props.AuthStore.saveUser(data.data.profile.name,data.data.profile.surname,data.data.profile.city);
         }catch (e) {
             bag.setSubmitting(false);
-            bag.setErrors(e)
+            Alert.alert("Giriş Yapılamadı!","Hatalı Kullanıcı Adı veya Şifre...");
+            bag.setErrors(e);
+            return false;
+
         }
     };
 
