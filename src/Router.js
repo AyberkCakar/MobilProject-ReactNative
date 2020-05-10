@@ -12,6 +12,7 @@ import Home from './screens/Home';
 import Maps from './screens/Maps';
 import Sensors from './screens/Sensors';
 import Battery from './screens/Battery';
+import Photo from './screens/Photo'
 
 // auth Loading
 import AuthLoading from './screens/AuthLoading'
@@ -42,6 +43,12 @@ const AppStack = createStackNavigator({
         screen: Battery,
         navigationOptions:{
             title: 'Battery',
+        }
+    },
+    Photo: {
+        screen: Photo,
+        navigationOptions:{
+            title: 'Photo',
         }
     },
 },{

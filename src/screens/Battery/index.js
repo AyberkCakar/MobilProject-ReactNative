@@ -30,7 +30,7 @@ export default class App extends React.Component {
         DeviceInfo.getBatteryLevel()
             .then(batteryLevel  => {
                 this.setState({
-                    batteryLevel: batteryLevel*100
+                    batteryLevel: Math.round(batteryLevel*100)
                 })
         });
     };
@@ -39,8 +39,8 @@ export default class App extends React.Component {
             const {isCharging,batteryLevel} = this.state;
             return (
                 <View style={styles.container}>
-                    <Text>{new String(isCharging).substr(0, 20)}</Text>
-                    <Text>{new String(batteryLevel).substr(0, 2)}</Text>
+                    <Text style={styles.text} >Şarj Durum: {new String(isCharging).substr(0, 20)}</Text>
+                    <Text style={styles.text} >Şarj Yüzdesi: %{new String(batteryLevel).substr(0, 2)}</Text>
                 </View>
             );
         }
@@ -52,8 +52,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#ecf0f1',
         padding: 8,
     },
-    paragraph: {
-        margin: 24,
+    text: {
+        margin: 10,
         fontSize: 18,
         fontWeight: 'bold',
         textAlign: 'center',
