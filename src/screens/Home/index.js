@@ -41,7 +41,7 @@ export default class Home extends Component {
                       <Icon name="arrow-forward"/>
                   </Right>
               </ListItem>
-              <ListItem onIntent onPress={() => {NavigationService.navigate('Maps')}}  style={{borderBottomWidth:0.5}}>
+              <ListItem onIntent onPress={() => {NavigationService.navigate('Battery')}}  style={{borderBottomWidth:0.5}}>
                   <Left>
                       <Icon name="pulse"/>
                       <Text>Şarj</Text>

@@ -9,15 +9,18 @@
   "dependencies": {
     "@react-native-community/async-storage": "^1.10.0",
     "axios": "^0.19.2",
+    "expo-battery": "^1.0.0",
     "formik": "^1.5.2",
     "mobx": "^5.9.4",
     "mobx-react": "^5.4.3",
     "native-base": "^2.12.1",
     "react": "16.8.3",
     "react-native": "0.59.8",
+    "react-native-device-info": "^3.0.0",
     "react-native-gesture-handler": "^1.0.17",
     "react-native-maps": "^0.24.2",
     "react-native-sensors": "^3.0.0",
+    "react-native-unimodules": "^0.9.1",
     "react-navigation": "^3.4.1",
     "yup": "^0.27.0"
   },

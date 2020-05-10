@@ -11,6 +11,7 @@ import {
 import Home from './screens/Home';
 import Maps from './screens/Maps';
 import Sensors from './screens/Sensors';
+import Battery from './screens/Battery';
 
 // auth Loading
 import AuthLoading from './screens/AuthLoading'
@@ -35,6 +36,12 @@ const AppStack = createStackNavigator({
         screen: Sensors,
         navigationOptions:{
             title: 'Sensors',
+        }
+    },
+    Battery: {
+        screen: Battery,
+        navigationOptions:{
+            title: 'Battery',
         }
     },
 },{
