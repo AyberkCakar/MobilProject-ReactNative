@@ -17,7 +17,7 @@ export default class Home extends Component {
               <ListItem onIntent onPress={() => {NavigationService.navigate('Maps')}}  style={{borderBottomWidth:0.5}}>
                   <Left>
                       <Icon name="map"/>
-                      <Text>Maps</Text>
+                      <Text>Harita</Text>
                   </Left>
                   <Right>
                       <Icon name="arrow-forward"/>

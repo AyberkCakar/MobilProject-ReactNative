@@ -7,6 +7,8 @@ import {
     createStackNavigator,
 } from 'react-navigation';
 
+import { Icon } from 'native-base';
+
 // app stack
 import Home from './screens/Home';
 import Maps from './screens/Maps';
@@ -18,7 +20,7 @@ import Photo from './screens/Photo'
 import AuthLoading from './screens/AuthLoading'
 
 // auth stack
-import SingIn from './screens/SignIn/index';
+import SignIn from './screens/SignIn/index';
 
 const AppStack = createStackNavigator({
     Home: {
@@ -58,12 +60,23 @@ const AppStack = createStackNavigator({
 
 const AuthStack = createBottomTabNavigator(
     {
-        SingIn:{
-            screen: SingIn
+        SignIn:{
+            screen: SignIn,
+            navigationOptions: {
+                title: 'Sign In',
+                tabBarIcon: ({ tintColor }) => <Icon name="log-in" style={{ color: tintColor }} />
+            }
         }
     },
     {
-        initialRouteName: 'SingIn'
+        initialRouteName: 'SignIn',
+        tabBarOptions: {
+            activeTintColor: '#fff',
+            inactiveTintColor: '#586589',
+            style: {
+                backgroundColor: '#171f33'
+            }
+        }
     }
 );
 
@@ -78,6 +91,7 @@ const SwitchNavigator = createSwitchNavigator(
     {
         initialRouteName: 'AuthLoading'
     }
+
 );
 
 export default createAppContainer( SwitchNavigator );
