@@ -20,6 +20,7 @@
     "react-native-device-info": "^3.0.0",
     "react-native-gesture-handler": "^1.0.17",
     "react-native-maps": "^0.24.2",
+    "react-native-permissions": "^1.1.1",
     "react-native-sensors": "^3.0.0",
     "react-native-unimodules": "^0.9.1",
     "react-navigation": "^3.4.1",
