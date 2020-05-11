@@ -20,7 +20,7 @@ export default class SingIn extends Component {
                 <View style={styles.headerBackground} />
                 <KeyboardAvoidingView behavior={"position"}>
                     <View>
-                        <Text style={styles.logo}>Sing In</Text>
+                        <Text style={styles.logo}>Sign In</Text>
                     </View>
                     <ScrollView>
                         <View style={styles.loginArea}>

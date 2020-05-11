@@ -60,7 +60,7 @@ export default class SigninForm extends Component {
                             fontWeight: 'bold',
                             paddingVertical:15
                             }}>
-                            Sing In
+                            Sign In
                         </Text>
                         <Item error={errors.username && touched.username}>
                             <Input

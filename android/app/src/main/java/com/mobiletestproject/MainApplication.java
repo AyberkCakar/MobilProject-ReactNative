@@ -3,7 +3,7 @@ package com.mobiletestproject;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import org.reactnative.camera.RNCameraPackage;
+import com.imagepicker.ImagePickerPackage;
 import com.airbnb.android.react.maps.MapsPackage;
 import com.sensors.RNSensorsPackage;
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
@@ -29,7 +29,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new RNCameraPackage(),
+            new ImagePickerPackage(),
             new MapsPackage(),
             new RNSensorsPackage(),
             new RNDeviceInfo(),
