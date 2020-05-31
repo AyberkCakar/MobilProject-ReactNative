@@ -17,7 +17,14 @@
    <div align="center"> Proje </div>
   
   </h2>
-  <p>Projemizde ilk ekran olarak Login Ekranı bizi karşılamaktadır. Giriş yapıldıktan sonra Home Ekranına yönlendiriliriz. Home Ekranında , Harita, Fotoğraf, Sensör ve Şarj seçenekleri bizi karşılar.
+  <p>Projemizde ilk ekran olarak Login Ekranı bizi karşılamaktadır. Giriş yapıldıktan sonra Home Ekranına yönlendiriliriz. Home Ekranında , Harita, Fotoğraf, Sensör ve Şarj seçenekleri bizi karşılar. 
+   <ul>
+      <li>Harita Ekranında Server'dan gelen bilgilerden almış olduğumuz koordinat işaretlidir.</li>
+      <li>Fotoğraf Ekranında anlık fotoğraf çekmeyi veya galerimiziden fotograf seçmeyi ve bu fotografları ekranda göstermeyi sağlarız.</li>
+     <li>Sensör Ekranında telefonumuzun accelerometer sensörüne ulaşırız ve anlık  x - y - z pozisyon bilgilerini alırız.</li>
+     <li>Şarj Ekranında telefonun Şarj olma durumunu ve Şarj Yüzdesi bilgisini ekrana yazdırırız.</li>
+
+   </ul>
 </p>
   <br>
 
@@ -26,44 +33,46 @@
   
   </h2>
   <br>
-  <h3>
   
-  <div align="center"> Login </div>
+  <h3>
+ Login 
   </h3>
-  <img src="https://github.com/AyberkCakar/MobilProject/blob/master/ss/giri%C5%9F.jpg">
+
+   <img src="https://github.com/AyberkCakar/MobilProject/blob/master/ss/giri%C5%9F.jpg" width="500" height="1000" >
+  
  <br>
-   <img src="https://github.com/AyberkCakar/MobilProject/blob/master/ss/giri%C5%9F_hata.jpg">
+   <img src="https://github.com/AyberkCakar/MobilProject/blob/master/ss/giri%C5%9F_hata.jpg" width="500" height="1000">
         <br>
   <h3>
-  <div align="center"> Home </div>
+Home 
   
   </h3>
-    <img src="https://github.com/AyberkCakar/MobilProject/blob/master/ss/anasayfa.jpg">
+    <img src="https://github.com/AyberkCakar/MobilProject/blob/master/ss/anasayfa.jpg" width="500" height="1000">
      <br>
   <h3>
-  <div align="center"> Maps </div>
+Maps 
   
   </h3>
-    <img src="https://github.com/AyberkCakar/MobilProject/blob/master/ss/harita.jpg">
+    <img src="https://github.com/AyberkCakar/MobilProject/blob/master/ss/harita.jpg" width="500" height="1000">
        <br>
          <h3>
 
   <h3>
-  <div align="center"> Photo </div>
+Photo 
   
   </h3>
-    <img src="https://github.com/AyberkCakar/MobilProject/blob/master/ss/resim.jpg">
+    <img src="https://github.com/AyberkCakar/MobilProject/blob/master/ss/resim.jpg" width="500" height="1000">
   <h3>
   <br>
   <h3>
-  <div align="center"> Sensor </div>
+Sensor 
   
   </h3>
-    <img src="https://github.com/AyberkCakar/MobilProject/blob/master/ss/xyz.jpg">
+    <img src="https://github.com/AyberkCakar/MobilProject/blob/master/ss/xyz.jpg" width="500" height="1000">
   <br>
   <h3>
-  <div align="center">   Battary </div>
+Battary 
 
   </h3>
-    <img src="https://github.com/AyberkCakar/MobilProject/blob/master/ss/%C5%9Farj.jpg">
+    <img src="https://github.com/AyberkCakar/MobilProject/blob/master/ss/%C5%9Farj.jpg" width="500" height="1000">
 
